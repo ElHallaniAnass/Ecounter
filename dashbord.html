@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/dashbord.css">
+    <title>dashbord panel</title>
+
+
+</head>
+<body>
+
+    
+<div class="topbar">
+    <div class="logo">
+        <!-- <h2>REDAL</h2> -->
+        <a href="#" class="log"><img src="image/MIT.png" alt=""></a>
+
+    </div>
+    <div class="search">
+        <input type="text" name="search" placeholder="search here">
+        <label for="search"><i class="fas fa-search"></i></label>
+    </div>
+    <i class="fas fa-bell"></i>
+    <div class="user">
+        <img src="image/doctor1.png" alt="">
+    </div>
+</div>
+
+
+
+
+<div class="main">
+    <div class="cards">
+        <div class="card">
+            <div class="card-content">
+                <div class="number"> 312 KWH</div>
+                <div class="card-name">Consomation Total</div>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-chart-bar"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="number">524 KWH</div>
+                <div class="card-name">Consomation de cette mois</div>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-chart-bar"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="number"> 54 </div>
+                <div class="card-name">tranche</div>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-signal"></i>                    
+            </div>
+            <!-- <div class="icon-box">
+                <i class="fas fa-watch"></i>
+            </div> -->
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="number"> 03/03/2022 </div>
+                <div class="card-name">Date de last Consommation</div>
+                
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-watch"></i>
+            </div>
+
+        </div>
+    </div>
+    <div class="charts">
+        <div class="chart">
+            <h2>Consomation  (moi actuel (mai))</h2>
+            <canvas id="lineChart"></canvas>
+        </div>
+
+
+
+        <div class="chart doughnut-chart">
+            <h2>Information</h2>
+            <canvas id="doughnut"></canvas>
+            <h3><span> Bienvenu!</span> <br> <br>
+                Notre Nouvelle Service De Suivre 
+                Voitre Compteur En Ligne</h1>                
+             </h3>
+
+             <h3>
+        
+                <!-- <div class="wrapper">
+
+
+                  <div class="abox flex1">
+                    <h2>BIENVENU! <br></h2>
+                    <h3><br> NOTRE NOUVELLE SERVICE DE SUIVRE <br>
+                        VOITRE COMPTEUR EN LIGNE</h3>
+                  </div>
+
+                  <div class="abox flex1">
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                    <label>{{ lastcons.date}}</label>
+                    <span class="fas fa-long-arrow-alt-right"></span>
+                    <p> vous payer</p>
+                  </div>
+
+                  <button>
+                    voir
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </button>
+                </div> -->
+              </div>
+        
+            </h1>
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+<div class="sidebar">
+    <ul>
+        <li>
+            <a href="dashbord.html">
+                <i class="fas fa-th-large"></i>
+                <div>
+                Welcome User</div>
+            </a>
+        </li>
+        <li>
+            <a href="Consomation.html">
+                <i class="fas fa-chart-bar"></i>
+                <div>Consomaion</div>
+            </a>
+        </li>
+        <li>
+            <a href="payement.html">
+                <i class="fas fa-hand-holding-usd"></i>
+                <div>payement</div>
+            </a>
+        </li>
+        <li>
+            <a href="#Contactez">
+                <i class="fas fa-users"></i>
+                <div>Contactez-nous</div>
+            </a>
+        </li>
+
+        <!-- <li>
+            <a href="#">
+                <i class="fas fa-hand-holding-usd"></i>
+                <div>Earnings</div>
+            </a>
+        </li> -->
+        <li>
+            <a href="#Settings">
+                <i class="fas fa-cog"></i>
+                <div>Settings</div>
+            </a>
+        </li>
+        <li>
+            <a href="#Help">
+                <i class="fas fa-question"></i>
+                <div>Help</div>
+            </a>
+        </li>
+        <li>
+            <a href="index.html">
+                <i class="fas fa-question"></i>
+                <div>LOGOUT</div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script src="js/graphe.js">  </script>
+
+</body>
+</html>
